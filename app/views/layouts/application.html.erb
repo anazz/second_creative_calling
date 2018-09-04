@@ -2,14 +2,27 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
+    <!-- Favicon -->
+    <%= favicon_link_tag asset_path('logo_petit.png'), :rel => 'icon', :type =>  'image/png' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
   </head>
 
   <body>
+    <%= render 'layouts/home_header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

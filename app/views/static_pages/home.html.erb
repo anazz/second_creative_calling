@@ -1,2 +1,419 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+                            <!-- HOMEPAGE FIRST SECTION-->
+
+<!-- Slider -->
+    <section class="swiper-js-container background-image-holder" data-holder-type="fullscreen" data-holder-offset=".navbar" id="homepage-first-section">
+    	<div class="swiper-container" data-swiper-autoplay="true" data-swiper-effect="coverflow" data-swiper-items="1" data-swiper-space-between="0">
+        	<div class="swiper-wrapper">
+
+            <!-- Slide -->
+            <div class="swiper-slide" data-swiper-autoplay="5000">
+            <!-- Slide -->
+                <div class="slice holder-item holder-item-light has-bg-cover bg-size-cover" style="background-image: url(<%= asset_path 'background.png' %>); background-position: bottom center;">
+                   	<span class="mask mask-dark--style-1 animated" data-animation-in="fadeIn" data-animation-delay="50"></span>
+                   	<div class="container container-sm d-flex align-items-center">
+                        <div class="col">
+                            <div class="row py-5 text-center">
+                                <div class="col col-xs-12">
+                                   	<h2 class="heading heading-1 strong-400 animated" data-animation-in="fadeInDownBig" data-animation-delay="100" id="h2-homapage-top-animation">Trouvez votre inspiration parmi nos artistes</h2>
+
+                                    <a id="homepage-center-button" href="#" class="btn btn-styled btn-base-1 btn-circle mt-5 animated" data-animation-in="flipInY" data-animation-delay="100" data-scroll-to="#scrollToSection">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+               	</div>
+            </div>
+        	</div>
+
+        					<!-- Add Pagination -->
+        					<!-- <div class="swiper-pagination"></div> -->
+
+       					    <!-- Add Arrows -->
+        					<!-- <div class="swiper-button swiper-button-next"></div>
+       						<div class="swiper-button swiper-button-prev"></div> -->
+   </div>
+</section>
+
+
+
+
+                          <!-- HOMEPAGE SECOND SECTION-->
+
+                    
+                      <!-- Film Theater Danse Music section -->
+
+<section class="slice sct-color-1">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <h3 class="heading heading-6 text-uppercase strong-600 c-base-1 ls-2 mb-0">
+                    Nos 
+                </h3>
+                <span class="space-xs-md"></span>
+                <p class="lead strong-600 c-gray-dark">
+                    Now it's easy to boost your online image by creating a website using our theme without having to
+                    worry about the quality of the end result.
+                </p>
+            </div>
+        </div>
+
+        <span class="space-xs-lg"></span>
+
+        <div class="row-wrapper">
+            <div class="row cols-xs-space cols-sm-space cols-md-space" id="homepage-images">
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'film1.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Film</a>
+                                    <span class="clearfix"></span>
+                                    <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'theater1.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Théâtre</a>
+                                    <span class="clearfix"></span>
+                                   <!--  <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cols-xs-space cols-sm-space cols-md-space" id="homepage-images">
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom" id="homepage-music-image">
+                        <div class="block-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'music2.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Musique</a>
+                                    <span class="clearfix"></span>
+                                  <!--   <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'danse1.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Danse</a>
+                                    <span class="clearfix"></span>
+                                    <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="space-xs-xl"></span>
+        <!-- Show more Div button-->
+        <div class="text-center">
+            <a href="tv-doublage-segment" class="btn btn-styled btn-base-1 btn-circle">Show more</a>
+        </div>
+    </div>
+</section>
+
+
+                    
+
+    <!-- Homepage third section -->
+
+                   <!--  <section class="slice sct-color-4" id="homepage-third-section">
+                        <div class="container sct-inner">
+                            
+
+                            <span class="clearfix"></span>
+
+                            <div class="row cols-xs-space cols-sm-space cols-md-space mt-5">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature--boxed-border feature--boxed-border-light" id="homepage-bottom-presentation">
+                                        <div class="icon-block--style-1-v5 text-xs-right">
+                                            <div class="block-icon">
+                                                <i class="icon-real-estate-086"></i>
+                                            </div>
+                                            <div class="block-content">
+                                                <h3 class="heading heading-6 strong-500 text-uppercase" id="h3-bottom-presentation">Architecture</h3>
+                                                <p id="p-bottom-presentation">
+                                                    1.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature--boxed-border feature--boxed-border-light" id="homepage-bottom-presentation">
+                                        <div class="icon-block--style-1-v5 text-xs-right">
+                                            <div class="block-icon">
+                                                <i class="icon-furniture-035"></i>
+                                            </div>
+                                            <div class="block-content" >
+                                                <h3 class="heading heading-6 strong-500 text-uppercase" id="h3-bottom-presentation">Interior design</h3>
+                                                <p id="p-bottom-presentation">
+                                                    2.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature feature--boxed-border feature--boxed-border-light" id="homepage-bottom-presentation">
+                                        <div class="icon-block--style-1-v5 text-xs-right">
+                                            <div class="block-icon">
+                                                <i class="icon-furniture-049"></i>
+                                            </div>
+                                            <div class="block-content" >
+                                                <h3 class="heading heading-6 strong-500 text-uppercase" id="h3-bottom-presentation">Furniture design</h3>
+                                                <p id="p-bottom-presentation">
+                                                    3.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </section> -->
+
+
+                    	<!-- HOMEPAGE THIRD SECTION-->
+
+	<section class="slice bg-white" id="scrollToSection" >
+
+    <div class="container" id="homepage-third-section">
+
+    	<span class="space-xs-xl"></span>
+    	
+        <!-- <div class="section-title section-title--style-1 text-center mb-4">
+            <h3 class="section-title-inner heading-2 c-black text-normal">
+                <span>Explore the World</span>
+            </h3>
+        </div> -->
+
+        <!-- <div class="fluid-paragraph fluid-paragraph-sm c-black strong-300 text-center">
+            <p>
+                We are travelers on a cosmic journey, stardust, swirling and dancing in the eddies and whirlpools of infinity.
+                Life is eternal. We have stopped for a moment to encounter each other, to meet, to love, to share. This is a precious moment.
+            </p>
+        </div> -->
+
+        
+
+        <div class="row cols-xs-space cols-sm-space cols-md-space">
+            <div class="col-lg-4">
+                <div class="block animate-this animate--hover-zoom">
+                    <div class="block-image">
+                        
+                            <!-- <img src="../../assets/images/prv/travel/img-promo-1.jpg"> -->
+                            <p id="p-homepage-third-section">1.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        
+                    </div>
+                    <div class="block-info block-info-over block-info-over--style-1 block-info-over">
+                        <div class="block-info-inner animate-translate--up">
+                            <div class="text-center">
+                                <!-- <a href="#" class="heading heading-4 strong-500 mb-0 c-white">The secret of life</a> -->
+                                <span class="clearfix"></span>
+                                <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+    			<img src="<%= asset_path 'Smaller-logo-vertical.png' %>" class="img-fluid" alt="Responsive image" id="homepage-big-logo">
+    		</div>
+    		<div class="col-lg-4">
+                <div class="block animate-this animate--hover-zoom">
+                    <div class="block-image">
+                        
+                            <!-- <img src="../../assets/images/prv/travel/img-promo-1.jpg"> -->
+                            <p id="p-homepage-third-section">2.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        
+                    </div>
+                    <div class="block-info block-info-over block-info-over--style-1 block-info-over">
+                        <div class="block-info-inner animate-translate--up">
+                            <div class="text-center">
+                                <!-- <a href="#" class="heading heading-4 strong-500 mb-0 c-white">The secret of life</a> -->
+                                <span class="clearfix"></span>
+                                <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="space-xs-xl"></span>
+
+        <div class="text-center">
+            <a href="#" class="link link-sm link--style-2 text-upeprcase text-uppercase strong-600">
+                See more
+                <!-- <i class="ion-ios-arrow-right ml-1"></i> -->
+            </a>
+        </div>
+    </div>
+</section>
+
+
+                    
+                                 <!-- HOMEPAGE FOURTH SECTION -->
+                            <!-- TV Agencies Advertisements Voiceovers section -->
+                    
+<section class="slice sct-color-1">
+    <div class="container">
+        <!-- <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <h3 class="heading heading-6 text-uppercase strong-600 c-base-1 ls-2 mb-0">
+                    Nos 
+                </h3>
+                <span class="space-xs-md"></span>
+                <p class="lead strong-600 c-gray-dark">
+                    Now it's easy to boost your online image by creating a website using our theme without having to
+                    worry about the quality of the end result.
+                </p>
+            </div>
+        </div> -->
+
+        <span class="space-xs-lg"></span>
+
+        <div class="row-wrapper">
+            <div class="row cols-xs-space cols-sm-space cols-md-space" id="homepage-images">
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image" id="homepage-tv-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'tv1.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">TV et productions web</a>
+                                    <span class="clearfix"></span>
+                                    <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image" id="homepage-agency-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'agency2.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Agences</a>
+                                    <span class="clearfix"></span>
+                                   <!--  <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cols-xs-space cols-sm-space cols-md-space" id="homepage-images">
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image" id="homepage-pub-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'pub1.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Publicité</a>
+                                    <span class="clearfix"></span>
+                                  <!--   <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="block block-image-holder animate-this animate--hover-zoom">
+                        <div class="block-image">
+                            <a href="#">
+                                <img src="<%= asset_path 'doublage4.jpg' %>">
+                            </a>
+                        </div>
+                        <div class="block-info block-info-over block-info-over--style-1 block-info-over--dark-gradient overflow-visible">
+                            <div class="block-info-inner animate-translate--up">
+                                <div class="text-center">
+                                    <a href="#" class="heading heading-4 strong-500 mb-0 c-white">Doublage</a>
+                                    <span class="clearfix"></span>
+                                    <!-- <small class="text-uppercase c-white">Graphics</small> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <span class="space-xs-xl"></span>
+        <!-- Show More Div Button-->
+        <!-- <div class="text-center">
+            <a href="tv-doublage-segment" class="btn btn-styled btn-base-1 btn-circle">Show more</a>
+        </div> -->
+    </div>
+</section>
+
+
+
+<!-- Back to the top button -->
+
+	<!-- bootstrap icon -->
+	<!-- <ion-icon name="arrow-dropup"></ion-icon> -->
+
+
+
+
+

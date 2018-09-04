@@ -1,0 +1,148 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* At the beginning of every scss doc (all `till Homepage) */
+
+@mixin box_sizing {
+  -webkit-box-sizing: border-box;	
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  box-sizing:         border-box;
+}
+
+/* for Safari */
+
+@-webkit-keyframes keyarm {
+    0% { -webkit-transform: rotate(0deg); }
+    5% { -webkit-transform: rotate(-14deg); }
+    10% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+/* for Safari */
+
+.row:before, .row:after{
+display:inline-block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Homepage */
+
+#homepage-first-section {
+	block-size: 42em;
+}
+
+#homepage-second-section {
+	block-size: 35em;
+}
+
+#homepage-music-image {
+	block-size: 89%;
+}
+
+#homepage-center-button:hover {
+	background-color: #2CAD47;
+	color: #004472;
+}
+
+#homepage-third-section {
+	background-color: white;
+}
+
+
+
+#homepage-big-logo {
+	
+
+}
+
+
+#p-homepage-third-section {
+	font-size: 120%;
+	font-family: Georgia, serif;
+	line-height: normal;
+	padding-top: 2em;
+}
+
+#h2-homapage-top-animation {
+	color: #2CAD47;
+}
+
+#homepage-bottom-presentation {
+	background-color: #2CAD47;
+	
+	color: #004472;
+}	
+
+#p-bottom-presentation {
+	color: #004472;
+	font-size: 150%;
+	font-family: Georgia, serif;
+	line-height: normal;
+}
+
+#homepage-tv-image {
+	block-size: 130%;
+}
+
+#homepage-pub-image {
+	block-size: 110%;
+}
+
+#homepage-agency-image {
+	block-size: 120%;
+}	
+
+#p-bottom {
+	block-size: 200%;
+	font-size: 150%;
+	font-family: Georgia, serif;
+	line-height: normal;
+}
+
+
+
+
+/* Homepage Header*/
+
+#logo-navbar {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: rainbow;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo-navbar-image {
+	padding-right: 2px;
+	padding-bottom: 1px;
+}
+
+#logo-navbar:hover {
+	text-decoration: none;
+	color: #2CAD47;
+}
+
+#navbar-right-buttons {
+	margin-top: 2px;
+	margin-bottom: 1px;
+}
+

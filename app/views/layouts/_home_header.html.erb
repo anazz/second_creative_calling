@@ -1,0 +1,16 @@
+<!-- Homepage Navbar-->
+
+	<nav class="navbar navbar-fixed-top navbar-light bg-dark">
+  		<div class="container navbar-container">
+    		<img id="logo-navbar-image" src="<%= asset_path 'logo_petit.png' %>" class="img-fluid" alt="Responsive image">
+    		<h5 class="my-0 mr-md-auto font-weight-normal">
+      		<%= link_to "CreativeCalling", root_path, class: "border-success font-weight-bold text-black", id: "logo-navbar" %>
+    		</h5>
+    		<nav class="nav navbar-nav navbar-right">
+      			<ul class="list-inline" id="navbar-right-buttons">
+			        <li id="navbar-right-buttons" class="btn btn-outline-success"><%= link_to "À propos", about_path %></li>
+			        <li id="navbar-right-buttons" class="btn btn-outline-success"><%= link_to "Nous contacter", contact_path %></li>
+        		</ul>
+        	</nav>
+		</div>
+	</nav>
