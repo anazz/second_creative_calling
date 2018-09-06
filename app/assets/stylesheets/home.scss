@@ -25,6 +25,26 @@
 display:inline-block;
 }
 
+@media screen and (min-width: 200px) {
+  .bloc {
+    display: block;
+    clear: both;
+  }
+  
+  #homepage-first-section {
+    margin-top: 70px;
+  }
+  
+  #logo-navbar {
+    padding-right: 90px;
+    display:center;
+  }
+  #logo-navbar-image {
+    padding-right: 2px;
+    display:center;
+  }
+}
+
 @media screen and (min-width: 200px) and (max-width: 640px) {
   .bloc {
     display: block;
