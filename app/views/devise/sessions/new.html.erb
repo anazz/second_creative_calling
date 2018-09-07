@@ -1,0 +1,71 @@
+                        <!-- Sign in form -->
+
+<!-- MAIN WRAPPER -->
+<div class="body-wrap" id="sign_up_main_wrapper">
+    <section class="slice sct-color-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card form-card form-card--style-2">
+                        <div class="form-header text-center">
+                            <div class="form-header-icon">
+                                <img src="<%= asset_path 'sign_up_icon.png' %>">
+                            </div>
+                        </div>
+                        <div class="form-body">
+                            <div class="text-center px-2">
+                                <h2 class="heading heading-2 strong-400 mb-0">Connexion</h2>
+                            </div>
+
+                            <form class="form-default mt-4" data-toggle="validator" role="form">
+
+                                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                                <%= devise_error_messages! %>
+
+                                <div class="row">
+              <!-- Email -->                  
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                           <%= f.label :"Email", class: "sign_in_form_label" %><br />
+                                          
+                                              <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => 'Email', class:'form-control form-control-lg'%>
+                                        </div>
+                                    </div>                     
+                                </div>
+
+                                <div class="row">
+              <!-- Password -->                  
+                                    <div class="col-md-12">
+                                        <div class="form-group has-feedback">
+                                            <%= f.label :"Mot de passe", class: "sign_in_form_label" %><br />
+                                          
+                                              <%= f.password_field :"password", autocomplete: "off", :placeholder => 'Mot de passe', class:'form-control form-control-lg'%>
+                                        </div>
+                                    </div>                
+                                </div>
+
+                                <div class="row">
+              <!-- Remember me checkbox-->                  
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                          <% if devise_mapping.rememberable? -%>
+                                              <%= f.check_box :remember_me %>
+                                              <%= f.label :"Se souvenir de moi" %>
+                                          <% end -%>
+                                        </div>
+                                    </div>
+                                </div>
+              <!-- Submit Sign in Form -->                  
+                                <div class="actions">
+
+                                  <%= f.submit "Se connecter", class:"btn btn-success"%>
+                                </div>
+                              <% end %>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

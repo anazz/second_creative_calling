@@ -1,3 +1,57 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* At the beginning of every scss doc (all `till Homepage) */
+
+@mixin box_sizing {
+  -webkit-box-sizing: border-box;	
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  box-sizing:         border-box;
+}
+
+/* for Safari */
+
+@-webkit-keyframes keyarm {
+    0% { -webkit-transform: rotate(0deg); }
+    5% { -webkit-transform: rotate(-14deg); }
+    10% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+/* for Safari */
+
+.row:before, .row:after{
+display:inline-block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Sign up form - Sign in form */
+
+#sign_up_main_wrapper {
+	margin-top: 6em;
+	margin-bottom: 6em;
+}
+
+.sign_up_form_label, .sign_in_form_label {
+	font-size: 15px;
+}

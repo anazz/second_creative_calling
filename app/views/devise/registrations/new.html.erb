@@ -1,0 +1,105 @@
+                            <!-- Sign up form -->
+<!-- MAIN WRAPPER -->
+<div class="body-wrap" id="sign_up_main_wrapper">
+    <section class="slice sct-color-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card form-card form-card--style-2">
+                        <div class="form-header text-center">
+                            <div class="form-header-icon">
+                                <img src="<%= asset_path 'sign_up_icon.png' %>">
+                            </div>
+                        </div>
+                        <div class="form-body">
+                            <div class="text-center px-2">
+                                <h2 class="heading heading-2 strong-400 mb-0">Création de compte</h2>
+                            </div>
+
+                            <form class="form-default mt-4" data-toggle="validator" role="form">
+
+                                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                                <%= devise_error_messages! %>
+
+                                <div class="row">
+              <!-- First Name -->                  
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="field">
+                                                <%= f.label 'Prénom', class: "sign_up_form_label" %><br />
+                                                <%= f.text_field :first_name, autofocus: true, :placeholder => 'Entrer votre prénom', class:'form-control form-control-lg' %>
+                                            </div>
+                                        </div>
+                                    </div>
+              <!-- Last Name -->                        
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="field">
+                                                <%= f.label 'Nom', class: "sign_up_form_label" %><br />
+                                                <%= f.text_field :last_name, autofocus: true, :placeholder => 'Entrer votre nom', class:'form-control form-control-lg' %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+              <!-- Bio -->                  
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="field">
+                                                <%= f.label 'Bio', class: "sign_up_form_label" %><br />
+                                                <%= f.text_area :bio, autofocus: true, :placeholder => 'Entrer bio', class:'form-control form-control-lg' %>
+                                            </div>
+                                        </div>
+                                    </div>
+              <!-- Email -->                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="field">
+                                                <%= f.label :email, class: "sign_up_form_label" %><br />
+                                                <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => 'Entrer un email', class:'form-control form-control-lg' %>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+              <!-- Create Password -->                  
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                           <div class="field">
+                                                <%= f.label :"Mot de passe", class: "sign_up_form_label" %>
+
+                                                <%= f.password_field :password, autocomplete: "off", :placeholder => '6 caractères minimum', class:'form-control form-control-lg' %>
+                                                
+                                              </div>
+                                        </div>
+                                    </div>
+              <!-- Confirm Password --> 
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback">
+                                            <%= f.label :"Confirmer le mot de passe", class: "sign_up_form_label" %><br />
+                                                <%= f.password_field :password_confirmation, autocomplete: "off", :placeholder => 'confirmer mon mot de passe', class:'form-control form-control-lg'%>
+                                        </div>
+                                    </div>
+                                </div>
+
+              <!-- Terms & conditions-->
+
+                              <!--   <div class="mt-1 ">
+                                    <small class="">By clicking "Sign up" you agree to our terms and conditions</small>
+                                </div> -->
+
+              <!-- Submit Sign Up Form -->                  
+                                <div class="actions">
+                                  <%= f.submit "Créer un compte", class:"btn btn-success" %>
+                                </div>
+                              <% end %>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

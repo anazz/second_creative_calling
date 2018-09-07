@@ -25,27 +25,8 @@
 display:inline-block;
 }
 
+
 @media screen and (min-width: 200px) {
-  .bloc {
-    display: block;
-    clear: both;
-  }
-  
-  #homepage-first-section {
-    margin-top: 120px;
-  }
-
-  #logo-navbar {
-    padding-right: 90px;
-   
-  }
-  #logo-navbar-image {
-    padding-left: 2px;
-  
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 640px) {
   .bloc {
     display: block;
     clear: both;
