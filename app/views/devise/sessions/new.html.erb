@@ -50,7 +50,7 @@
                                         <div class="checkbox">
                                           <% if devise_mapping.rememberable? -%>
                                               <%= f.check_box :remember_me %>
-                                              <%= f.label :"Se souvenir de moi" %>
+                                              <%= f.label :"Se souvenir de moi", id: "remember_me_sign_in" %>
                                           <% end -%>
                                         </div>
                                     </div>
@@ -59,13 +59,19 @@
                                 <div class="actions">
 
                                   <%= f.submit "Se connecter", class:"btn btn-success"%>
-                                </div>
+                                </div>        
                               <% end %>
                             </form>
                         </div>
-                    </div>
+                    </div> 
+                    <div class="form-user-footer-links pt-2">
+                          <div class="row" style="justify-content: space-evenly;">
+                              <%= render "devise/shared/links" %>
+                          </div>
+                    </div>               
                 </div>
             </div>
         </div>
     </section>
 </div>
+  

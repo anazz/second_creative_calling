@@ -55,3 +55,15 @@ display:inline-block;
 .sign_up_form_label, .sign_in_form_label {
 	font-size: 15px;
 }
+
+#devise_shared_links_sign_in {
+  font-size: 15px;
+  color: black;
+  &:hover{
+    color: #2CAD47;
+  }
+}
+
+#remember_me_sign_in {
+  font-size: 12px;
+}
